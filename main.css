@@ -1,0 +1,90 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.42;
+    background: rgb(12, 12, 12);
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrapper__content {
+    margin: 0 auto;
+    width: 1142px;
+}
+
+.header {
+    height: 129px;
+    width: 1142px;
+    top: 21;
+    position: relative;
+}
+
+.logo {
+    top: 57px;
+    left: 0;
+}
+
+.menu {
+    top: 21px;
+    left: 500px;
+    text-align: center;
+}  
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.menu__link {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.contacts {
+    font-style: normal;
+    text-align: right;
+    top: 48px;
+    right: 0;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.contacts__phone:hover {
+    text-decoration: underline; 
+}
+
+.contacts__schedule {
+    font-size: 13px;
+    text-decoration: no;
+    color: #ff3d00;
+}
+
+.contacts__schedule:hover {
+    text-decoration: underline; 
+}
+
+.hello {
+    width: 776px;
+    height: 197px;
+}
