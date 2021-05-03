@@ -5,6 +5,9 @@ body {
     font-size: 16px;
     line-height: 1.42;
     background: rgb(12, 12, 12);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
 }
 
 a {
@@ -20,33 +23,78 @@ ul li {
     list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin-top: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body, html {
+    height: 100%;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    background: url(./img/hero.jpg) top center no-repeat;
+}
+
 .wrapper__content {
     margin: 0 auto;
-    width: 1142px;
+    width: 1140px;
 }
 
 .header {
-    height: 129px;
-    width: 1142px;
-    top: 21;
+    height: 120px;
     position: relative;
+    margin-bottom: 150px;
+}
+
+.header__logo {
+    margin-right: 241px;
+    position: absolute;
+    top: 30px;
 }
 
 .logo {
-    top: 57px;
-    left: 0;
+    display: inline-block; 
+    vertical-align: middle;
+    width: 198px;
 }
 
 .menu {
-    top: 21px;
-    left: 500px;
-    text-align: center;
-}  
+    top: 42px;
+    left: 450px;
+}
+
+.header__menu {
+    position: absolute;
+}
 
 .menu__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 50px;
+    margin-right: 55px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
 }
 
 .menu__link {
@@ -58,10 +106,21 @@ ul li {
     text-decoration: underline;
 }
 
-.contacts {
+.header .contacts {
+    display: inline-block;
     font-style: normal;
     text-align: right;
-    top: 48px;
+    position: absolute; 
+    top:50%;
+    right:0;
+    transform: translateY(-50%);
+}
+
+
+.contacts {
+    display: inline-block;
+    font-style: normal;
+    text-align: right;
     right: 0;
 }
 
@@ -71,20 +130,267 @@ ul li {
 }
 
 .contacts__phone:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .contacts__schedule {
     font-size: 13px;
-    text-decoration: no;
+    text-decoration: underline;
     color: #ff3d00;
-}
-
-.contacts__schedule:hover {
-    text-decoration: underline; 
 }
 
 .hello {
     width: 776px;
     height: 197px;
+    text-align: center;
+    margin-bottom: 250px;
 }
+
+.hello__title {
+    font-weight: 800;
+    font-size: 72px;
+}
+
+.hello__title_wrap {
+    margin-bottom: 28px;
+}
+
+.hello__subtitle {
+    font-size: 18px;
+}
+
+.hello__subtitle_wrap {
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background: #ff3d00;
+    border-radius: 35px;
+    padding: 18px 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container__offer {
+    width: 1142px;
+    margin-bottom: 138px;
+}
+
+.offer__content {
+    padding: 36px 30px;
+    color: black;
+}
+
+.offers__item_offer {
+    min-height: 476px;
+    width: 362px;
+    background: #fff;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 362px;
+    border-radius: 5px;
+}
+
+.offer__item_offer:last-child {
+    margin-right: 0;
+}
+
+.offer__img {
+    position: relative;
+    top: 36px;
+    left: 29px;
+    bottom: 28px;
+}
+
+.offer__title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.offer__feature {
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    width: 115px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.offer__feature:last-child {
+    margin-right: 0;
+}
+
+.offer__details {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.news__title {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 51px;
+
+}
+.news__items {
+    width: 555px;
+    height: 394px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 4px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.news__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news__content {
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 30px;
+    min-height: 140px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination__info, .pagination__list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination__info {
+    margin-right: 26px;
+}
+
+.pagination__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination__number {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.pagination__item--active .pagination__number {
+    background: #ff5500;
+}
+
+.pagination__item:hover {
+    background: #ff5500;
+}
+
+.about-us__img {
+    content:"";
+    display: inline-block;
+    vertical-align: top;
+    width: 488px;
+    height: 502px;
+    background: url("./img/cameraman.jpg") center center / cover no-repeat;
+}
+
+.about-us__card {
+    background: #fff;
+    padding: 80px 98px; 
+    display: inline-block;
+    vertical-align: top;
+    width: 780px;
+    margin-left: -142px;
+    margin-top: 97px;
+}
+
+.about-us__title {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:black;
+}
+
+.about-us__details {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 60px;
+    color:black;
+}
+
+.footer {
+    height: 146px;
+    position: relative;
+    margin-bottom: 60px;
+
+}
+.footer__logo {
+    position: relative;
+    margin-right: 130px;
+}
+
+.social-menu__list {
+    display: inline-block;
+    position: absolute;  
+    top:50%; 
+    transform: translateY(-50%);
+    right: 265px;
+}
+.social-menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer__menu {
+    top: 42px;
+    left: 330px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer__menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 55px;
+}
+
+.footer__menu__item:last-child {
+    margin-right: 0;
+}
+
+.footer__contacts {
+    display: inline-block;
+    font-style: normal;
+    text-align: right;
+    position: relative; 
+    top:50%;
+    right:0;
+    transform: translateY(-50%);
+    }
+
+.contacts__free-call {
+    font-style: normal;
+    text-align: right;
+    position: absolute;  
+    top:50%; 
+    transform: translateY(-50%);
+    right: 0;
+}
+

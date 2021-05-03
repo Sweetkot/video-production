@@ -12,10 +12,10 @@
 	<div class="wrapper">
 		<div class="wrapper__content">
 			<header class="header">
-				<a href="#" class="logo">
+				<a href="#" class="header__logo logo">
 					<img src="img/logo.png" alt="logo" class="logo__img">
 				</a>
-				<nav class="menu">
+				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
 						<li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
@@ -30,43 +30,53 @@
 			<main class="main-content">
 				<section class="hello">
 					<div class="container">
-						<h1 class="hello__title">Снимем для вас креативное видео</h1>
-						<div class="hello__subtitle">Креативный видеопродакшн полного цикла</div>
+						<div class="hello__title_wrap">
+							<h1 class="hello__title">Снимем для вас креативное видео</h1>
+						</div>
+						<div class="hello__subtitle_wrap">
+							<div class="hello__subtitle">Креативный видеопродакшн полного цикла</div>
+						</div>
 						<a class="button" href="#">Подробнее</a>
 					</div>
 				</section>
 				<section class="offers">
-					<div class="container">
+					<div class="container container__offer">
 						<ul class="offers__list">
-							<li class="offers__item offer">
+							<li class="offers__item_offer">
 								<img class="offer__img" src="img/tv.png" alt="tv" >
-								<h3 class="offer__title">Реклама</h3>
-								<div class="offer__features">
-									<div class="offer__feature">От <span class="offer__special-text">5</span> человек на проект</div>
-									<div class="offer__feature"><span class="offer__special-text">28</span> дней работы в среднем</div>
+								<div class="offer__content">
+									<h3 class="offer__title">Реклама</h3>
+									<div class="offer__features">
+										<div class="offer__feature">От <span class="offer__special-text">5</span> человек на проект</div>
+										<div class="offer__feature"><span class="offer__special-text">28</span> дней работы в среднем</div>
+									</div>
+									<p class="offer__details">Креатив и производство рекламы, документального и корпоративного контента.</p>
+									<a class="button" href="#">Подробнее</a>
 								</div>
-								<p class="offer__details">Креатив и производство рекламы, документального и корпоративного контента.</p>
-								<a class="button" href="#">Подробнее</a>
 							</li>
-							<li class="offers__item offer">
-								<img class="offers__img" src="img/clapper.png" alt="video">
-								<h3 class="offers__title">Видео-клип</h3>
-								<div class="offer__features">
-									<div class="offer__feature">От <span class="offer__special-text">7</span> человек на проект</div>
-									<div class="offer__feature"><span class="offer__special-text">21</span> дней работы в среднем</div>
+							<li class="offers__item_offer">
+								<img class="offer__img" src="img/clapper.png" alt="video">
+								<div class="offer__content">
+									<h3 class="offer__title">Видео-клип</h3>
+									<div class="offer__features">
+										<div class="offer__feature">От <span class="offer__special-text">7</span> человек на проект</div>
+										<div class="offer__feature"><span class="offer__special-text">21</span> дней работы в среднем</div>
+									</div>
+									<p class="offer__details">Вы решили представиться своим слушателям, пополнить свой творчески багаж качественным видео? Прекрасно!</p>
+									<a class="button" href="#">Подробнее</a>
 								</div>
-								<p class="offer__details">Вы решили представиться своим слушателям, пополнить свой творчески багаж качественным видео? Прекрасно!</p>
-								<a class="button" href="#">Подробнее</a>
 							</li>
-							<li class="offers__item offer">
-								<img class="offers__img" src="img/film.png" alt="wedding">
-								<h3 class="offers__title">Свадьба</h3>
-								<div class="offer__features">
-									<div class="offer__feature">От <span class="offer__special-text">2</span> человек на проект</div>
-									<div class="offer__feature"><span class="offer__special-text">30</span> дней работы в среднем</div>
+							<li class="offers__item_offer">
+								<img class="offer__img" src="img/film.png" alt="wedding">
+								<div class="offer__content">
+									<h3 class="offer__title">Свадьба</h3>
+									<div class="offer__features">
+										<div class="offer__feature">От <span class="offer__special-text">2</span> человек на проект</div>
+										<div class="offer__feature"><span class="offer__special-text">30</span> дней работы в среднем</div>
+									</div>
+									<p class="offer__details">Получите живое видео своего самого счастливого дня, которое Вы будете пересматривать снова и снова.</p>
+									<a class="button" href="#">Подробнее</a>
 								</div>
-								<p class="offer__details">Получите живое видео своего самого счастливого дня, которое Вы будете пересматривать снова и снова.</p>
-								<a class="button" href="#">Подробнее</a>
 							</li>
 						</ul>
 					</div>
@@ -98,7 +108,7 @@
 							Страница <span class="pagination__index">1</span> из <span class="pagination__count">7</span>
 						</div>
 						<ul class="pagination__list">
-							<li class="pagionation__item"><a class="pagination__number" href="#">1</a></li>
+							<li class="pagionation__item--active"><a class="pagination__number" href="#">1</a></li>
 							<li class="pagionation__item"><a class="pagination__number" href="#">2</a></li>
 							<li class="pagionation__item"><a class="pagination__number" href="#">3</a></li>
 							<li class="pagionation__item"><a class="pagination__number" href="#">4</a></li>
@@ -113,14 +123,14 @@
 						<img class="about-us__img" src="img/cameraman.jpg" alt="cameraman">
 						<div class="about-us__card">
 							<h3 class="about-us__title">О нас</h3>
-							<p class="about-us__details">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>					
+							<p class="about-us__details">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>					
 							<a class="button" href="#">Подробнее</a>
 						</div>
 					</div>
 				</section>		
 			</main>
 			<footer class="footer">
-				<a href="#" class="logo">
+				<a href="#" class="footer__logo logo">
 					<img class="logo__img" src="img/logo.png" alt="logo">
 				</a>
 				<nav class="menu">
