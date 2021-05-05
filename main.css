@@ -189,7 +189,7 @@ button {
     display: inline-block;
     vertical-align: middle;
     border-radius: 5px;
-    padding: 23px 30px;
+    padding: 22px 30px;
 }
 
 .offer__item_offer:last-child {
@@ -221,7 +221,7 @@ button {
     vertical-align: top;
     width: 131px;
     margin-right: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
 }
 
 .offer__special-text {
@@ -235,6 +235,7 @@ button {
 .offer__details {
     font-weight: 400;
     font-size: 15px;
+    margin-bottom: 35px;
 }
 
 .offer__button {
@@ -315,13 +316,14 @@ button {
 }
 
 .pagination__info {
-    margin-right: 26px;
-    margin-left: 55px;
+    margin-right: 24px;
+    margin-left: 32px;
 }
 
 .pagination__item {
     display: inline-block;
     vertical-align: middle;
+    margin-right: -2px;
 }
 
 .pagination__number {
@@ -394,8 +396,8 @@ button {
 }
 .main-page__footer-container {
     border-top: 1px solid #2E3032;
-    padding-top: 51px;
-    padding-bottom: 51px;
+    padding-top: 34px;
+    padding-bottom: 34px;
 }
 .footer {    
     position: relative;
@@ -449,10 +451,11 @@ button {
     font-style: normal;
     text-align: right;
     position: relative; 
-    top:50%;
-    right:0;
+    top: 42;
+    right: 0;
     transform: translateY(-50%);
-    }
+    margin-left: 70px;
+}
 
 .contacts__free-call {
     font-style: normal;
