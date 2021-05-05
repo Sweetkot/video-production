@@ -64,12 +64,12 @@ button {
 .header {
     height: 120px;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 116px;
 }
 
 .header__menu {
-    top: 42px;
-    left: 450px;
+    top: 47px;
+    left: 436px;
 }
 
 .header__logo {
@@ -91,7 +91,7 @@ button {
 .menu__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 55px;
+    margin-right: 50px;
 }
 
 .menu__item:last-child {
@@ -113,7 +113,7 @@ button {
     font-style: normal;
     text-align: right;
     right: 0;
-    top: 30px;
+    top: 35px;
 }
 
 .contacts__phone {
@@ -137,16 +137,17 @@ button {
 }
 
 .hello__container {
-    max-width: 770px;
+    max-width: 775px;
 }
 
 .hello__title {
     font-weight: 800;
     font-size: 72px;
+    text-transform: uppercase;
 }
 
 .hello__title_wrap {
-    margin-bottom: 28px;
+    margin-bottom: 12px;
 }
 
 .hello__subtitle {
@@ -161,7 +162,7 @@ button {
     display: inline-block;
     background: #ff3d00;
     border-radius: 35px;
-    padding: 18px 40px;
+    padding: 18px 55px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -170,7 +171,7 @@ button {
 
 .container__offer {
     width: 1142px;
-    margin-bottom: 138px;
+    margin-bottom: 164px;
 }
 
 .offer__content {
@@ -188,7 +189,7 @@ button {
     display: inline-block;
     vertical-align: middle;
     border-radius: 5px;
-    padding: 36px 30px;
+    padding: 23px 30px;
 }
 
 .offer__item_offer:last-child {
@@ -210,16 +211,16 @@ button {
 .offer__title {
     font-weight: 700;
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
 }
 
 .offer__feature {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
     display: inline-block;
     vertical-align: top;
     width: 131px;
-    margin-right: 30px;
+    margin-right: 35px;
     margin-bottom: 30px;
 }
 
@@ -233,7 +234,7 @@ button {
 
 .offer__details {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .offer__button {
@@ -242,7 +243,7 @@ button {
     border: 2px solid #ff5500;
     color: #ff5500;
     border-radius: 35px;
-    padding: 18px 40px;
+    padding: 18px 55px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -258,6 +259,7 @@ button {
     font-weight: 800;
     font-size: 36px;
     margin-bottom: 51px;
+    text-transform: uppercase;
 
 }
 .news__items {
@@ -304,7 +306,7 @@ button {
 
 .pagination {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 54px;
 }
 
 .pagination__info, .pagination__list {
@@ -314,6 +316,7 @@ button {
 
 .pagination__info {
     margin-right: 26px;
+    margin-left: 55px;
 }
 
 .pagination__item {
@@ -328,7 +331,7 @@ button {
     border-radius: 50%;
     text-decoration: none;
     font-weight: bold;
-    line-height: 32px;
+    line-height: 32px; 
 }
 
 .pagination__item--active .pagination__number {
@@ -355,7 +358,7 @@ button {
 
 .about-us__card {
     background: #fff;
-    padding: 80px 98px; 
+    padding: 63px 83px; 
     display: inline-block;
     vertical-align: top;
     width: 780px;
@@ -369,19 +372,30 @@ button {
     font-size: 36px;
     margin-bottom: 40px;
     color:black;
+    text-transform: uppercase;
 }
 
 .about-us__details {
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 60px;
+    margin-bottom: 85px;
     color:black;
 }
 
+.about-us__button {
+    display: inline-block;
+    background: #ff5400;
+    border-radius: 35px;
+    padding: 18px 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
 .main-page__footer-container {
     border-top: 1px solid #2E3032;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 51px;
+    padding-bottom: 51px;
 }
 .footer {    
     position: relative;
@@ -395,7 +409,7 @@ button {
 .footer__menu {
     display: inline-block;
     position: static;
-    margin-right: 111px;
+    margin-right: 101px;
 }
 
 .social-menu {
@@ -406,12 +420,16 @@ button {
 .social-menu__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 6px;
+}
+
+.social-menu__item:last-child {
+    margin-right: 0;
 }
 
 .footer__menu {
     top: 42px;
-    left: 330px;
+    left: 320px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -439,5 +457,6 @@ button {
 .contacts__free-call {
     font-style: normal;
     text-align: right;
+    font-size: 11px;
 }
 
